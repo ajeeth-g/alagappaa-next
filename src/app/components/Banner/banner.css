@@ -1,0 +1,26 @@
+.bannerSection {
+  color: var(--inverse-text-color);
+}
+
+.bannerImage {
+  position: relative;
+}
+
+.bannerImage img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bannerContent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bannerContent > h2{
+  margin-bottom: 0;
+}

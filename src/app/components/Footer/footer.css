@@ -1,0 +1,76 @@
+.footerSection {
+  background-color: var(--inverse-bg-color);
+  color: var(--inverse-text-color);
+  padding: 5.6rem 8rem 0;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5.6rem;
+}
+
+.companyLogos {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.companyLogo {
+  max-width: 100%;
+  height: auto;
+}
+
+.footerRight {
+  display: flex;
+  gap: 9.6rem;
+}
+
+.footerLinkTitle {
+  margin-bottom: 1.6rem;
+  font-weight: 600;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footerTime {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerTime > p:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.footerTime > p:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+  border-top: 0.5px solid #eeeeee;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.footerPolicies {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.footerPolicies > li > a:hover {
+  text-decoration: underline;
+}

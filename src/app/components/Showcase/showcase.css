@@ -1,0 +1,13 @@
+.showcaseHeading{
+
+    display: flex;
+}.showcaseButton {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.showcaseGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}

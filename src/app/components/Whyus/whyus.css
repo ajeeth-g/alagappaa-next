@@ -1,0 +1,8 @@
+.whyUsSection {
+  height: 100vh;
+}
+
+.whyusContainer {
+  display: flex;
+  gap: 1rem;
+}

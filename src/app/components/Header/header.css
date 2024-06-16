@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8rem;
+  flex-wrap: wrap;
+  background-color: var(--inverse-bg-color);
+  color: var(--inverse-text-color);
+}
+
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}

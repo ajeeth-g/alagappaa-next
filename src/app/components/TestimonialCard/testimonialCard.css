@@ -1,0 +1,19 @@
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 4rem;
+  border-radius: 0.8rem;
+  gap: 3.2rem;
+}
+
+.customerDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}

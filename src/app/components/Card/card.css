@@ -1,0 +1,39 @@
+.ContactCard {
+  display: flex;
+  gap: 2.4rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+  width: 100%;
+}
+
+.locationImage img {
+  border-radius: 0.8rem;
+}
+
+.ServiceCenterDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 100%;
+}
+
+.ServiceCenterName {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.ContactServices {
+  font-size: 1.3rem;
+}
+
+.contactTime {
+  font-weight: 600;
+}
+
+.contactButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}

@@ -1,0 +1,7 @@
+.explanation{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    max-width: 51.5rem;
+    gap: 3.2rem;
+}
