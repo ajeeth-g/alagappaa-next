@@ -1,25 +1,48 @@
 .statisticsSection {
   display: flex;
-  justify-content: space-between; /* Space between left and right sections */
-  align-items: start;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .statisticsLeft {
-  width: 50%; /* 50% width for left section */
-  max-width: 47.2rem;
-  margin-bottom: 1.6rem; /* Adjust spacing between sections */
+  width: 50%;
+  max-width: 60%;
+  margin-bottom: 1.6rem;
 }
 
 .statisticsLeft h2 {
   margin-bottom: 1.6rem;
 }
 
+.statisticsRight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
 .statsGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-  row-gap: 8rem;
-  column-gap:  20rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .statisticsLeft {
+    width: 100%;
+  }
+
+  .statisticsRight {
+    width: 100%;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+    column-gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -27,7 +50,28 @@
     flex-direction: column;
   }
 
+  .statisticsLeft {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
   .statisticsRight {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .statisticsLeft {
+    margin-bottom: 1rem;
+  }
+
+  .statsGrid {
+    gap: 1.5rem;
   }
 }

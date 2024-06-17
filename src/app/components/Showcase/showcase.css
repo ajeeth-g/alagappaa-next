@@ -1,33 +1,37 @@
+
 .showcaseHeading {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .showcaseButton {
   display: flex;
-  gap: 2.4rem;
+  gap: 1.2rem; /* Adjust button gap for responsiveness */
+  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+}
+
+.showcaseButton button {
+  margin-bottom: 1rem; /* Space between buttons */
 }
 
 .showcaseGallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 1.6rem;
 }
 
 .showcaseGallery img {
   border-radius: 0.8rem;
-  opacity: 1; /* Initial opacity */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transform transition for zoom effect */
+  opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Zoom-in effect on hover */
 .showcaseGallery img:hover {
-  transform: scale(1.04); /* Zoom in the image */
+  transform: scale(1.04);
 }
 
-/* Additional styles for inactive button */
 .inactive {
   padding: 1.2rem 2.4rem;
   font-size: 1.6rem;
@@ -39,8 +43,20 @@
   border: 2px solid var(--inverse-bg-color);
 }
 
-/* Animation when hiding images */
 .showcaseGallery.hidden {
   opacity: 0;
-  pointer-events: none; /* Disable pointer events when hidden */
+  pointer-events: none;
+}
+
+
+@media screen and (max-width: 768px) {
+.showcaseHeading{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.showcaseHeading h2{
+  text-align: center;
+}
 }

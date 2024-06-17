@@ -1,7 +1,7 @@
 "use client"
-import React, { useState, useEffect } from "react";
-import "./showcase.css";
+import React, { useState } from "react";
 import Image from "next/image";
+import "./showcase.css";
 
 const Showcase = () => {
   const [selectedLocation, setSelectedLocation] = useState("Pollachi");
@@ -16,10 +16,8 @@ const Showcase = () => {
     }, 300); // Adjust timing to match CSS transition duration
   };
 
-  console.log(selectedLocation);
-
   return (
-    <section className="container">
+    <section className="showcaseSection container">
       <div className="showcaseHeading">
         <h2>
           Our Service Center <br />{" "}
@@ -51,88 +49,28 @@ const Showcase = () => {
       <div className={`showcaseGallery ${isGalleryVisible ? "" : "hidden"}`}>
         {selectedLocation === "Pollachi" && (
           <>
-            <Image
-              src="/Showcase1.png"
-              width={308}
-              height={308}
-              alt="Pollachi Showcase Image 1"
-            />
-            <Image
-              src="/Showcase2.png"
-              width={308}
-              height={308}
-              alt="Pollachi Showcase Image 2"
-            />
-            <Image
-              src="/Showcase3.png"
-              width={308}
-              height={308}
-              alt="Pollachi Showcase Image 3"
-            />
-            <Image
-              src="/Showcase4.png"
-              width={308}
-              height={308}
-              alt="Pollachi Showcase Image 3"
-            />
-            <Image
-              src="/Showcase5.png"
-              width={308}
-              height={308}
-              alt="Pollachi Showcase Image 3"
-            />
-            <Image
-              src="/Showcase6.png"
-              width={308}
-              height={308}
-              alt="Pollachi Showcase Image 3"
-            />
-            <Image
-              src="/Showcase7.png"
-              width={308}
-              height={308}
-              alt="Pollachi Showcase Image 3"
-            />
-            <Image
-              src="/Showcase8.png"
-              width={308}
-              height={308}
-              alt="Pollachi Showcase Image 3"
-            />
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
+              <Image
+                key={index}
+                src={`/Showcase${index}.png`}
+                width={308}
+                height={308}
+                alt={`Pollachi Showcase Image ${index}`}
+              />
+            ))}
           </>
         )}
         {selectedLocation === "Udumalaipettai" && (
           <>
-            <Image
-              src="/Showcase1.png"
-              width={308}
-              height={308}
-              alt="Udumalaipettai Showcase Image 1"
-            />
-            <Image
-              src="/Showcase2.png"
-              width={308}
-              height={308}
-              alt="Udumalaipettai Showcase Image 1"
-            />
-            <Image
-              src="/Showcase3.png"
-              width={308}
-              height={308}
-              alt="Udumalaipettai Showcase Image 1"
-            />
-            <Image
-              src="/Showcase4.png"
-              width={308}
-              height={308}
-              alt="Udumalaipettai Showcase Image 2"
-            />
-            <Image
-              src="/Showcase5.png"
-              width={308}
-              height={308}
-              alt="Udumalaipettai Showcase Image 3"
-            />
+            {[1, 2, 3, 4, 5].map((index) => (
+              <Image
+                key={index}
+                src={`/Showcase${index}.png`}
+                width={308}
+                height={308}
+                alt={`Udumalaipettai Showcase Image ${index}`}
+              />
+            ))}
           </>
         )}
       </div>

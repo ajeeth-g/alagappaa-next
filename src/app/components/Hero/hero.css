@@ -19,6 +19,10 @@
   gap: 1.6rem;
 }
 
+.heroTitle h1{
+  font-weight: 600;
+}
+
 .heroRight {
   position: relative;
   width: 50%;
@@ -38,14 +42,14 @@
 
 .carViewImage {
   top: -20rem;
-  left: 15rem;
+  right: 0rem;
   width: 450px; /* Adjust width as per your design */
   height: 450px; /* Adjust height as per your design */
 }
 
 .buddyImage {
   top: -30rem;
-  left: 0;
+  right: 15rem;
   z-index: 99;
   width: 450px; /* Adjust width as per your design */
   height: 450px; /* Adjust height as per your design */

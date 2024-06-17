@@ -1,6 +1,6 @@
 .serviceCardContainer{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-x: auto; /* Enable horizontal scrolling */
   scroll-snap-type: x mandatory;

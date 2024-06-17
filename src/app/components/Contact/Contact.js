@@ -26,7 +26,7 @@ const Contact = () => {
           altText="Udumalaipettai Service Center"
           services="Service & Bodyshop"
           time="9:00 AM- 6:00 PM"
-          location="https://maps.app.goo.gl/fWeX9K4CZqGptt8L8"
+          location="https://maps.app.goo.gl/QiK9fK61gZtubK6M6 "
         />
       </div>
     </section>

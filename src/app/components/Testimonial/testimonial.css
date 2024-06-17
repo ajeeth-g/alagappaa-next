@@ -2,3 +2,12 @@
     display: flex;
     gap: 3.2rem;
 }
+
+@media screen and (max-width: 1024px) {
+    .testimonialSection{
+        text-align: center  ;
+    }
+.testimonialCardContainer{
+    flex-direction: column;
+}
+}
