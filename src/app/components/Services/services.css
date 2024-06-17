@@ -1,0 +1,39 @@
+.serviceCardContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  gap: 1.6rem;
+}
+
+.servicesSection {
+  margin-top: 3.2rem; /* Adjust margin as needed */
+}
+
+.serviceCard {
+  flex: 0 0 auto; /* Ensure cards don't shrink */
+  scroll-snap-align: start; /* Align to start of container */
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #D9D9D9;
+
+}
+
+.dot.active {
+  background-color: var(--inverse-bg-color);
+
+}
+

@@ -1,8 +1,19 @@
-.whyUsSection {
-  height: 100vh;
-}
-
 .whyusContainer {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  row-gap: 9.6rem;
+  justify-content: space-between;
+}
+
+.leftColumn, .rightColumn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 9.6rem;
+}
+
+@media (max-width: 768px) {
+  .whyusContainer {
+    grid-template-columns: 1fr;
+  }
 }

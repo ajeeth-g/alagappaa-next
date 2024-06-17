@@ -20,8 +20,8 @@
 
 .ServiceCenterName {
   display: flex;
-  align-items: start;
   justify-content: space-between;
+  gap: 1.6rem;
 }
 
 .ContactServices {
@@ -36,4 +36,76 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+.contactButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.contactIcon svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .ContactCard {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .locationImage img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ServiceCenterDetails {
+    align-items: center;
+  }
+
+  .ServiceCenterName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactButton {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ContactCard {
+    padding: 1.6rem;
+  }
+
+  .contactButton {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .contactIcon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ContactCard {
+    padding: 1.2rem;
+  }
+
+  .contactButton {
+    gap: 0.8rem;
+  }
+
+  .contactIcon svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 }

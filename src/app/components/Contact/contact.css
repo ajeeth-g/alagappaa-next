@@ -1,5 +1,23 @@
+.contactSection {
+  margin-top: 3.2rem;
+}
+
 .serviceCenterCardContainer {
-    display: flex;
-    gap: 1.6rem;
-    justify-content: space-between; /* Adjust as needed */
-  } 
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  .serviceCenterCardContainer {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .serviceCenterCardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,26 +1,20 @@
+import React from "react";
 import Image from "next/image";
 import "./whyusExplaination.css";
 
-const WhyusExplaination = () => {
+const WhyusExplaination = ({ image, title, description }) => {
   return (
     <div className="explanation">
       <Image
-        src="/ExtendedWarranty.png"
+        src={image}
         width={56}
         height={56}
-        alt=""
+        alt="Explanation image"
         className="companyLogo"
       />
       <div>
-        <h3>Extended warranty</h3>
-        <p>
-          Extend the benefits that you enjoy under warranty, by one or two more
-          years, to protect your car for a longer duration/distance (Upto
-          1,50,000 kms). The extended warranty will cover mechanical and
-          electrical breakdowns in your car, and it starts immediately after
-          expiry of the original warranty. We strongly recommend the purchase of
-          an Extended Warranty as early as possible
-        </p>
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
     </div>
   );

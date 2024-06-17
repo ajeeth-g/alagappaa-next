@@ -1,5 +1,6 @@
-import "./contact.css"
+import "./contact.css";
 import Card from "../Card/Card";
+import Showcase6 from "../../../../public/Showcase6.png";
 
 const Contact = () => {
   return (
@@ -10,7 +11,8 @@ const Contact = () => {
       </h2>
       <div className="serviceCenterCardContainer">
         <Card
-          image=""
+          image={Showcase6}
+          number="+917942690073"
           title="Pollachi"
           altText="Pollachi Service Center"
           services="Service & Bodyshop"
@@ -18,12 +20,13 @@ const Contact = () => {
           location="https://maps.app.goo.gl/fWeX9K4CZqGptt8L8"
         />
         <Card
-          image=""
+          image={Showcase6}
+          number="+917942690073"
           title="Udumalaipettai"
           altText="Udumalaipettai Service Center"
           services="Service & Bodyshop"
           time="9:00 AM- 6:00 PM"
-          location="https://maps.app.goo.gl/fWeX9K4CZqGptt8L8"
+          location="https://maps.app.goo.gl/QiK9fK61gZtubK6M6 "
         />
       </div>
     </section>
