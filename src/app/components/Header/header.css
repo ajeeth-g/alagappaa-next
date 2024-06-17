@@ -4,16 +4,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 8rem;
+  padding: 1.5rem 8rem;
   background-color: var(--inverse-bg-color);
   color: var(--inverse-text-color);
   z-index: 999;
 }
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
 
+.companyLogo {
+  width: 200px;
+  height: auto;
+}
 
 .navList {
-  flex: 2 1 auto; /* Allow navigation to grow and shrink */
+  flex: 2 1 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,17 +67,38 @@
   height: 3.2rem;
 }
 
-.navActive {
-  display: flex;
+.navActive .navList {
+  display: flex; /* Show navList when active */
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
+  background-color: var(--inverse-bg-color);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.navList li {
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
   .header {
     flex-direction: column;
+    align-items: flex-start;
     padding: 1.6rem;
+  }
+
+  .tataLogo {
+    display: none;
+  }
+
+  .companyLogo {
+    width: 150px; /* Adjust width for smaller screens */
+    height: auto;
   }
 
   .logoContainer,
@@ -80,33 +109,21 @@
 
   .navList {
     justify-content: center;
+    display: none; /* Hide navList by default on smaller screens */
   }
 
   .mobileMenuToggle {
-    display: block;
-  }
-
-  .navList {
-    display: none; /* Hide navList by default on smaller screens */
-    background-color: var(
-      --inverse-bg-color
-    ); /* Background color for mobile menu */
     position: absolute;
-    top: 100%; /* Position it below the header */
-    left: 0;
-    width: 100%;
-    padding-top: 1rem; /* Add padding to separate from header */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    display: inline-block;
+    align-self: flex-end; /* Align toggle button to the right */
   }
 
-  .navList.active {
+  .navActive .navList {
     display: flex; /* Show navList when active */
-    flex-direction: column;
   }
 
   .navList li {
     margin-bottom: 1rem;
-    text-align: center;
   }
 
   .navList a {
@@ -118,5 +135,11 @@
 
   .navList a:hover {
     color: #007bff; /* Hover color */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .companyLogo {
+    width: 150px; /* Adjust width for smaller screens */
   }
 }

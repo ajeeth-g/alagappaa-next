@@ -14,3 +14,9 @@
   font-weight: 500;
   color: var(--inverse-text-color);
 }
+
+@media screen and (max-width: 768px) {
+  .serviceCard img {
+    width: 26rem;
+  }
+}

@@ -36,11 +36,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .bannerContent {
-    padding: 1.6rem;
+  .bannerSection {
+    display: none;
   }
 
-  .bannerContentText > h2 {
-    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  .bannerContent {
+    padding: 1.6rem;
   }
 }

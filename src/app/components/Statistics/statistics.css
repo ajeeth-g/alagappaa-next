@@ -16,20 +16,28 @@
 }
 
 .statisticsRight {
-  width: 50%;
   display: flex;
   justify-content: center;
 }
 
 .statsGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
   width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
+.statsFrist,
+.statsSecond {
+  display: flex;
+  align-items: start;
+  column-gap: 32rem;
+}
 
+@media screen and (max-width: 1024px) {
+  .statisticsSection {
+    row-gap: 2rem;
+  }
   .statisticsLeft {
     width: 100%;
   }
@@ -42,6 +50,14 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 4rem;
     column-gap: 2rem;
+  }
+
+  .statsFrist,
+  .statsSecond {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 4rem;
   }
 }
 
@@ -59,19 +75,10 @@
   .statisticsRight {
     width: 100%;
   }
-
-  .statsGrid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .statisticsLeft {
     margin-bottom: 1rem;
-  }
-
-  .statsGrid {
-    gap: 1.5rem;
   }
 }
