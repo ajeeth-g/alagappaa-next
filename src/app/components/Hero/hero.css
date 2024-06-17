@@ -1,17 +1,77 @@
-.heroSection{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: calc(100vh - 5.7rem);
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 5.7rem);
 }
 
-.heroLeft{
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: start;
+  width: 50%;
+}
+
+.heroTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.heroRight {
+  position: relative;
+  width: 50%;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.carViewImage,
+.buddyImage {
+  position: absolute;
+  opacity: 1;
+  transition: transform 0.3s ease-out; /* Added transition for transform */
+}
+
+.carViewImage {
+  top: -20rem;
+  left: 15rem;
+  width: 450px; /* Adjust width as per your design */
+  height: 450px; /* Adjust height as per your design */
+}
+
+.buddyImage {
+  top: -30rem;
+  left: 0;
+  z-index: 99;
+  width: 450px; /* Adjust width as per your design */
+  height: 450px; /* Adjust height as per your design */
+}
+
+/* Animation on hover */
+.carViewImage:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.buddyImage:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+@media screen and (max-width: 1024px) {
+  .heroSection {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    width: 50%;
-}
+  }
 
-.heroRight{
-    width: 50%;
+  .heroLeft {
+    width: 100%;
+  }
+
+  .heroRight {
+    display: none;
+    width: 100%;
+  }
 }

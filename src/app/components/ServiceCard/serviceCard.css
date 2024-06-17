@@ -1,0 +1,12 @@
+.serviceCard {
+  position: relative;
+}
+
+.serviceHeading {
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--inverse-text-color);
+}

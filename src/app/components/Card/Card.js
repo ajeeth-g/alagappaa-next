@@ -1,12 +1,13 @@
 import Image from "next/image";
 import "./card.css";
-import Button from "../Button/Button";
+import { IoCall } from "react-icons/io5";
+import { FaLocationArrow } from "react-icons/fa";
 
-const Card = ({ title, services, time }) => {
+const Card = ({ image, title, services, number, location, time }) => {
   return (
     <section className="ContactCard">
       <div className="locationImage">
-        <Image src="/bannerImage.png" width={250} height={250} alt="" />
+        <Image src={image} width={250} height={250} alt="" />
       </div>
       <div className="ServiceCenterDetails">
         <div className="ServiceCenterName">
@@ -18,10 +19,24 @@ const Card = ({ title, services, time }) => {
             <p>Working Hours</p>
             <p className="contactTime">{time}</p>
           </div>
-        </div>
+        </div>  
         <div className="contactButtons">
-          <Button text="+91 9092155212" />
-          <Button text="+91 9092155212" />
+          <a href="tel:+91 909215512">
+            <button className="ctaPrimary contactButton">
+              <span className="contactIcon">
+                <IoCall />
+              </span>{" "}
+              {number}
+            </button>
+          </a>
+          <a href={location} target="_blank">
+            <button className="ctaPrimary contactButton">
+              <span className="contactIcon">
+                <FaLocationArrow />
+              </span>
+              Get Direction
+            </button>
+          </a>
         </div>
       </div>
     </section>

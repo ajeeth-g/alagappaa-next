@@ -37,3 +37,16 @@
   flex-direction: column;
   gap: 0.8rem;
 }
+
+.contactButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.contactIcon svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}

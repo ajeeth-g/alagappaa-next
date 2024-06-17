@@ -1,7 +1,9 @@
-.showcaseHeading{
+.showcaseHeading {
+  display: flex;
+  justify-content: space-between;
+}
 
-    display: flex;
-}.showcaseButton {
+.showcaseButton {
   display: flex;
   gap: 2.4rem;
 }
@@ -9,5 +11,36 @@
 .showcaseGallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 1.6rem;
+}
+
+.showcaseGallery img {
+  border-radius: 0.8rem;
+  opacity: 1; /* Initial opacity */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transform transition for zoom effect */
+}
+
+/* Zoom-in effect on hover */
+.showcaseGallery img:hover {
+  transform: scale(1.04); /* Zoom in the image */
+}
+
+/* Additional styles for inactive button */
+.inactive {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--main-bg-color);
+  color: var(--brand-text-color);
+  border-radius: 0.8rem;
+  height: max-content;
+  border: 2px solid var(--inverse-bg-color);
+}
+
+/* Animation when hiding images */
+.showcaseGallery.hidden {
+  opacity: 0;
+  pointer-events: none; /* Disable pointer events when hidden */
 }

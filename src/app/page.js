@@ -8,12 +8,12 @@ import Testimonial from "./components/Testimonial/Testimonial.js";
 import Banner from "./components/Banner/Banner.js";
 import Contact from "./components/Contact/Contact.js";
 import Footer from "./components/Footer/Footer.js";
-import Whyus from "./components/Whyus/WhyUs.js";
+import Whyus from "./components/Whyus/Whyus.js";
 
 export default function Home() {
-  return (  
+  return (
     <main>
-      <Header />
+      {/* <Header />
       <Hero />
       <Services />
       <Whyus />
@@ -22,7 +22,7 @@ export default function Home() {
       <About />
       <Testimonial />
       <Banner />
-      <Contact />
+      <Contact /> */}
       <Footer />
     </main>
   );

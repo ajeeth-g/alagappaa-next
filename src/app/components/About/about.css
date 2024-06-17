@@ -1,10 +1,33 @@
-.aboutSection{
-    height: 100vh;
+.aboutSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32rem;
+  height: 80vh;
 }
 
-.aboutLeft{
-    width: 50%;
+.aboutLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 50%;
 }
-.aboutRight{
-    width: 50%;
+
+.aboutHeading {
+  margin-bottom: 0.8rem;
+}
+
+.aboutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  width: max-content;
+}
+
+.aboutRight {
+  width: 50%;
+}
+.aboutImage{
+  object-fit: fill;
 }

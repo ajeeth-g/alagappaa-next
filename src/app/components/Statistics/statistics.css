@@ -1,0 +1,33 @@
+.statisticsSection {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: start;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.statisticsLeft {
+  width: 50%; /* 50% width for left section */
+  max-width: 47.2rem;
+  margin-bottom: 1.6rem; /* Adjust spacing between sections */
+}
+
+.statisticsLeft h2 {
+  margin-bottom: 1.6rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+  row-gap: 8rem;
+  column-gap:  20rem;
+}
+
+@media screen and (max-width: 768px) {
+  .statisticsSection {
+    flex-direction: column;
+  }
+
+  .statisticsRight {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
