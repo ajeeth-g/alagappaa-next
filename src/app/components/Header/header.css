@@ -16,7 +16,7 @@
 }
 
 .companyLogo {
-  width: 200px;
+  width: 25 0px;
   height: auto;
 }
 
@@ -97,7 +97,7 @@
   }
 
   .companyLogo {
-    width: 150px; /* Adjust width for smaller screens */
+    width: 220px; /* Adjust width for smaller screens */
     height: auto;
   }
 
@@ -135,11 +135,5 @@
 
   .navList a:hover {
     color: #007bff; /* Hover color */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .companyLogo {
-    width: 150px; /* Adjust width for smaller screens */
   }
 }
