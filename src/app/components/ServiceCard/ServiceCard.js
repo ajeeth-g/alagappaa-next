@@ -1,13 +1,11 @@
-import Image from "next/image";
-import "./serviceCard.css";
+import Image from 'next/image';
+import './serviceCard.css';
 
-const ServiceCard = ({title}) => {
+const ServiceCard = ({ title }) => {
   return (
-    <div className="serviceCard">
-      <Image src="/CarView.png" width={308} height={400} alt="" />
-      <p className="serviceHeading">
-       {title}
-      </p>
+    <div className='serviceCard'>
+      <Image src='/CarView.png' width={308} height={400} alt='' />
+      <p className='serviceHeading'>{title}</p>
     </div>
   );
 };

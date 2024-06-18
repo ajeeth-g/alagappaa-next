@@ -2,7 +2,6 @@
 import './services.css';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import { useState, useEffect } from 'react';
-// import AnnualMaintenanceContract from '../../../../public/AnnualMaintenanceContract,jpg';
 
 const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,15 +33,17 @@ const Services = () => {
 
   const visibleServices = isMobile
     ? serviceTitles
-    : serviceTitles.slice(currentIndex, currentIndex + 5);
+    : currentIndex === 0
+    ? serviceTitles.slice(0, 4)
+    : serviceTitles.slice(4, 6);
 
   const dots = [];
-  for (let i = 0; i < Math.ceil(serviceTitles.length / 5); i++) {
+  for (let i = 0; i < Math.ceil(serviceTitles.length / 4); i++) {
     dots.push(
       <span
         key={i}
-        className={`dot ${currentIndex === i * 5 ? 'active' : ''}`}
-        onClick={() => handleClickDot(i * 5)}
+        className={`dot ${currentIndex === i * 4 ? 'active' : ''}`}
+        onClick={() => handleClickDot(i * 4)}
       />
     );
   }
