@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.serviceCard img {
-  width: 100%;
-}
-
 .serviceHeading {
   position: absolute;
   left: 3rem;

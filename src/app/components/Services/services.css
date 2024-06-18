@@ -1,6 +1,6 @@
 .serviceCardContainer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 1.6rem;
 }
@@ -17,6 +17,7 @@
 
 .serviceCard {
   flex: 0 0 auto; /* Ensure cards don't shrink */
+  scroll-snap-align: start; /* Align to start of container */
 }
 
 .dotsContainer {
