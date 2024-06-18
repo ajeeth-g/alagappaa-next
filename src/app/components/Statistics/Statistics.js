@@ -17,16 +17,16 @@ const Statistics = () => {
       <div className='statisticsRight'>
         <div className='statsGrid'>
           <div className='statsFrist'>
-            <Stats number='50+' description='Over Automobile Industry' />
+            <Stats number='50+' description='Years Over Automobile Industry' />
             <Stats number='500+' description='Active Customer' />
           </div>
           <div className='statsSecond'>
             <Stats
               number='25+'
-              description='Years of Authorized Service Excellence'
+              description='Years of TATA Motors Authorized Service Excellence'
             />
 
-            <Stats number='95%' description='Customer Satisfaction Rate' />
+            <Stats number='98%' description='Customer Satisfaction Rate' />
           </div>
         </div>
       </div>
