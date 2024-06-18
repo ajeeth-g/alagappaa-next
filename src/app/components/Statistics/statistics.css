@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  gap: 3.2rem;
 }
 
 .statisticsLeft {
@@ -31,7 +31,7 @@
 .statsSecond {
   display: flex;
   align-items: start;
-  column-gap: 32rem;
+  column-gap: 16rem;
 }
 
 @media screen and (max-width: 1024px) {
