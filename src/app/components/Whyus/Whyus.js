@@ -10,10 +10,9 @@ const Whyus = () => {
   return (
     <section id="whyUs" className="whyUsSection container">
       <h2>
-        Why We &apos; re the <br />{" "}
+        Why We&apos;re the <br />{" "}
         <span className="textHighlight">Best Choice</span>
       </h2>
-
       <div className="whyusContainer">
         <div className="leftColumn">
           <WhyusExplaination
