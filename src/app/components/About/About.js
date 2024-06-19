@@ -12,9 +12,14 @@ const About = () => {
             <span className='textHighlight'>Story</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Sit et massa maecenas elit.
-            Lorem ipsum dolor sit amet consectetur. Sit et massa maecenas elit.
-            Lorem ipsum dolor sit amet consectetur. Sit et massa maecenas elit.
+            Alagappaa Engineering, a trusted name in the industry for over 60
+            years, is a Tata-authorized service center. Renowned for its
+            expertise and reliability, Alagappaa Engineering has been providing
+            exceptional service and maintenance solutions, ensuring customer
+            satisfaction and vehicle performance for decades. With a commitment
+            to quality and innovation, they continue to set the standard in
+            automotive service. Their experienced team and state-of-the-art
+            facilities guarantee the highest level of care for every vehicle.
           </p>
         </div>
         <button className='ctaPrimary aboutButton'>
@@ -26,9 +31,9 @@ const About = () => {
       </div>
       <div className='aboutRight'>
         <Image
-          src='/Showcase2.png'
-          width={604}
-          height={308}
+          src='/about.webp'
+          width={704}
+          height={380}
           alt='Udumalaipettai Showcase Image 1'
           className='aboutImage'
         />

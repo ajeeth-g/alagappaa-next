@@ -27,6 +27,7 @@
 
 .aboutImage {
   object-fit: fill;
+  border-radius: 0.8rem;
 }
 
 /* Responsive styles */

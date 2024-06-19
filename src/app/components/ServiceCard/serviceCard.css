@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.serviceCard img {
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
 .serviceHeading {
   position: absolute;
   left: 3rem;

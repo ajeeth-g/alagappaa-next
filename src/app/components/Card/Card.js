@@ -21,7 +21,7 @@ const Card = ({ image, title, services, number, location, time }) => {
           </div>
         </div>
         <div className='contactButtons'>
-          <a href='tel:+91 909215512'>
+          <a href='tel:+91 917942690073'>
             <button className='ctaPrimary contactButton'>
               <span className='contactIcon'>
                 <IoCall />

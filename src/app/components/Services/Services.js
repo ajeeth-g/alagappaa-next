@@ -2,6 +2,11 @@
 import './services.css';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import { useState, useEffect } from 'react';
+import PaidService from '../../../../public/PaidService.jpeg';
+import WarrantyRepair from '../../../../public/WarrantyRepair.jpg';
+import AnnualMaintenanceContract from '../../../../public/AnnualMaintenanceContract.jpg';
+import CarAccidental from '../../../../public/CarAccidental.jpg';
+import FreeService from '../../../../public/FreeService.jpg';
 
 const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,23 +27,25 @@ const Services = () => {
     setCurrentIndex(index);
   };
 
-  const serviceTitles = [
-    'Free Service',
-    'Warranty Repair',
-    'Paid Service',
-    'Accidental Repair',
-    'Annual Maintenance Contract',
-    'Extended Warranty',
+  const serviceData = [
+    { title: 'Free Service', image: FreeService },
+    { title: 'Warranty Repair', image: WarrantyRepair },
+    { title: 'Paid Service', image: PaidService },
+    { title: 'Accidental Repair', image: CarAccidental },
+    { title: 'Annual Maintenance Contract', image: AnnualMaintenanceContract },
+    { title: 'Extended Warranty', image: WarrantyRepair },
   ];
+
+  const serviceTitles = serviceData.map((service) => service.title);
 
   const visibleServices = isMobile
     ? serviceTitles
     : currentIndex === 0
-    ? serviceTitles.slice(0, 4)
-    : serviceTitles.slice(4, 6);
+    ? serviceData.slice(0, 4)
+    : serviceData.slice(4, 6);
 
   const dots = [];
-  for (let i = 0; i < Math.ceil(serviceTitles.length / 4); i++) {
+  for (let i = 0; i < Math.ceil(serviceData.length / 4); i++) {
     dots.push(
       <span
         key={i}
@@ -54,8 +61,12 @@ const Services = () => {
         Our Professional <br /> <span className='textHighlight'>Services</span>
       </h2>
       <div className={`serviceCardContainer ${isMobile ? 'mobile' : ''}`}>
-        {visibleServices.map((title, index) => (
-          <ServiceCard key={index} title={title} />
+        {visibleServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            title={service.title}
+            image={service.image}
+          />
         ))}
       </div>
       {!isMobile && <div className='dotsContainer'>{dots}</div>}
