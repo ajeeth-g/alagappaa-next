@@ -12,7 +12,7 @@ const Contact = () => {
       <div className='serviceCenterCardContainer'>
         <Card
           image={Showcase6}
-          number='+917942690073'
+          number='919095005999'
           title='Pollachi'
           altText='Pollachi Service Center'
           services='Service & Bodyshop'
@@ -21,7 +21,7 @@ const Contact = () => {
         />
         <Card
           image={Showcase6}
-          number='+917942690073'
+          number='+919698905999'
           title='Udumalaipettai'
           altText='Udumalaipettai Service Center'
           services='Service & Bodyshop'
