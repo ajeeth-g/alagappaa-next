@@ -36,13 +36,9 @@ const Services = () => {
     { title: 'Extended Warranty', image: WarrantyRepair },
   ];
 
-  const serviceTitles = serviceData.map((service) => service.title);
-
   const visibleServices = isMobile
-    ? serviceTitles
-    : currentIndex === 0
-    ? serviceData.slice(0, 4)
-    : serviceData.slice(4, 6);
+    ? serviceData
+    : serviceData.slice(currentIndex, currentIndex + 4);
 
   const dots = [];
   for (let i = 0; i < Math.ceil(serviceData.length / 4); i++) {

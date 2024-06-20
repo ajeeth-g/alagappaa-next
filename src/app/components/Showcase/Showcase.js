@@ -1,10 +1,10 @@
-'use client';
-import React, { useState } from 'react';
-import Image from 'next/image';
-import './showcase.css';
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
+import "./showcase.css";
 
 const Showcase = () => {
-  const [selectedLocation, setSelectedLocation] = useState('Pollachi');
+  const [selectedLocation, setSelectedLocation] = useState("Pollachi");
   const [isGalleryVisible, setIsGalleryVisible] = useState(true);
 
   // Function to handle location button clicks
@@ -17,37 +17,37 @@ const Showcase = () => {
   };
 
   return (
-    <section className='showcaseSection container'>
-      <div className='showcaseHeading'>
+    <section className="showcaseSection container">
+      <div className="showcaseHeading">
         <h2>
-          Our Service Center <br />{' '}
-          <span className='textHighlight'>Showcase</span>
+          Our Service Center <br />{" "}
+          <span className="textHighlight">Showcase</span>
         </h2>
-        <div className='showcaseButton'>
+        <div className="showcaseButton">
           <button
-            onClick={() => handleLocationClick('Pollachi')}
+            onClick={() => handleLocationClick("Pollachi")}
             className={
-              selectedLocation === 'Pollachi'
-                ? 'ctaPrimary active'
-                : 'ctaPrimary inactive'
+              selectedLocation === "Pollachi"
+                ? "ctaPrimary active"
+                : "ctaPrimary inactive"
             }
           >
             <p>Pollachi</p>
           </button>
           <button
-            onClick={() => handleLocationClick('Udumalaipettai')}
+            onClick={() => handleLocationClick("Udumalaipettai")}
             className={
-              selectedLocation === 'Udumalaipettai'
-                ? 'ctaPrimary active'
-                : 'ctaPrimary inactive'
+              selectedLocation === "Udumalaipettai"
+                ? "ctaPrimary active"
+                : "ctaPrimary inactive"
             }
           >
             <p>Udumalaipettai</p>
           </button>
         </div>
       </div>
-      <div className={`showcaseGallery ${isGalleryVisible ? '' : 'hidden'}`}>
-        {selectedLocation === 'Pollachi' && (
+      <div className={`showcaseGallery ${isGalleryVisible ? "" : "hidden"}`}>
+        {selectedLocation === "Pollachi" && (
           <>
             {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
               <Image
@@ -60,9 +60,9 @@ const Showcase = () => {
             ))}
           </>
         )}
-        {selectedLocation === 'Udumalaipettai' && (
+        {selectedLocation === "Udumalaipettai" && (
           <>
-            {[1, 2, 3, 4, 5].map((index) => (
+            {[1].map((index) => (
               <Image
                 key={index}
                 src={`/Showcase${index}.png`}
@@ -71,6 +71,13 @@ const Showcase = () => {
                 alt={`Udumalaipettai Showcase Image ${index}`}
               />
             ))}
+
+            <Image
+              src="/UdumalpetServiceCenter.jpeg"
+              width={308}
+              height={308}
+              alt={`Udumalaipettai Showcase Image`}
+            />
           </>
         )}
       </div>

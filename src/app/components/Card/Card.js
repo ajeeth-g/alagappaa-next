@@ -7,7 +7,7 @@ const Card = ({ image, title, services, number, location, time }) => {
   return (
     <section className='ContactCard'>
       <div className='locationImage'>
-        <Image src={image} width={250} height={250} alt='' />
+        <Image src={image} width={250} height={250} alt='Service Center' className='contactImage' />
       </div>
       <div className='ServiceCenterDetails'>
         <div className='ServiceCenterName'>

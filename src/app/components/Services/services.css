@@ -7,8 +7,9 @@
 
 .serviceCardContainer.mobile {
   flex-wrap: nowrap;
-  overflow-x: scroll; /* Horizontal scroll for mobile */
-  scroll-snap-type: none;
+  overflow-x: auto; /* Use 'auto' for better scrolling */
+  scroll-snap-type: x mandatory; /* Ensure snap alignment */
+  padding-left: 1.6rem; /* Add padding to start for snapping */
 }
 
 .servicesSection {
@@ -40,12 +41,19 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .serviceCardContainer {
+   
+    justify-content: space-between;
+   
+  }
+  
   .servicesSection h2 {
     text-align: center;
   }
 
   .serviceCardContainer {
-    overflow-x: scroll;
+    overflow-x: auto;
     flex-wrap: nowrap;
   }
 

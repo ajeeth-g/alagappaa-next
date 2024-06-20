@@ -1,10 +1,26 @@
 .serviceCard {
   position: relative;
+  width: 308px;
+  height: 400px;
 }
 
-.serviceCard img {
+.serviceImage {
   object-fit: cover;
   border-radius: 0.8rem;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .serviceHeading {
@@ -14,10 +30,5 @@
   font-size: 2.4rem;
   font-weight: 500;
   color: var(--inverse-text-color);
-}
-
-@media screen and (max-width: 768px) {
-  .serviceCard img {
-    width: 26rem;
-  }
+  z-index: 2; /* Ensure the text is above the overlay */
 }
